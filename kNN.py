@@ -6,10 +6,6 @@ def createDataSet():
 	labels = ['A','A','B','C']
 	return group,labels
 
-def getDistance(labeledData,inputData):
-	distance = sqrt((labeledData[0]-inputData[0])*(labeledData[0]-inputData[0])+(labeledData[1]-inputData[1])*(labeledData[1]-inputData[1]))
-	return distance
-
 def kNN(inputData,k):
 	group,labels = createDataSet()
 
